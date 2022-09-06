@@ -1,0 +1,161 @@
+// Scss for header
+
+$footer-bg:#EDF2FB;
+
+@media screen and (max-width: 600px) {
+  .header {
+    @apply flex items-center p-2;
+  }
+
+  .depo-logo {
+    @apply h-7;
+  }
+
+  .select-location {
+    @apply hidden;
+  }
+
+  .search-bar-for-pc {
+    @apply hidden;
+  }
+
+  .search-bar-for-mobile{
+    @apply h-10 w-full border-2 border-b-slate-300 outline-none rounded-xl bg-slate-100 p-2;
+  }
+
+  .be-our-partner {
+    @apply ml-4 p-3 h-12 w-40 flex justify-center items-center border-slate-500 border-2 rounded-xl;
+
+    .handshake-icon {
+      @apply mr-2 text-6xl text-slate-500;
+    }
+  }
+
+  .login-and-cart {
+    @apply hidden;
+  }
+
+  .location{
+    @apply p-3 mx-4 border-2 border-slate-500 rounded-xl;
+  }
+
+  .footer{
+    
+    background-color: $footer-bg;
+
+    .footer-play-store-and-logo{
+      @apply flex flex-col items-center justify-center gap-10 my-7;
+    }
+  }
+
+  .footer-items{
+    @apply flex flex-col  m-7;
+  
+    .footer-list{
+
+      h1{
+        @apply text-2xl font-normal;
+      }
+    
+      li{
+        @apply m-2
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  .header {
+    @apply flex items-center p-2;
+  }
+  .depo-logo {
+    @apply h-12;
+  }
+  .select-location {
+    @apply block mx-3;
+  }
+  .search-bar-for-pc {
+    @apply h-10 w-3/4 border-2 border-b-slate-300 outline-none rounded-xl bg-slate-100 p-2;
+  }
+
+  .search-bar-for-mobile{
+    @apply hidden;
+  }
+  .be-our-partner {
+    @apply ml-4 p-3 h-12 w-40 flex justify-center items-center border-slate-500 border-2 rounded-xl;
+
+    .handshake-icon {
+      @apply mr-2 text-6xl text-slate-500;
+    }
+  }
+
+    .login-and-cart {
+    @apply mx-6 h-12 text-center;
+    .icon {
+      @apply mr-2 text-3xl text-slate-500;
+    }
+  }
+
+  .footer{
+    background-color: $footer-bg;
+    .footer-play-store-and-logo{
+      @apply flex flex-row items-center justify-center gap-10 my-7;
+    }
+  }
+
+  .footer-items{
+    @apply flex flex-col items-center justify-center gap-10 my-7;
+  
+    .footer-list{
+
+      h1{
+        @apply text-2xl font-normal;
+      }
+    
+      li{
+        @apply m-2
+      }
+    }
+  }
+}
+
+.social-media-icon-footer{
+  @apply grid sm:grid-cols-1 md:grid-cols-3 border-t-2 border-slate-300 p-5 mx-3; 
+
+}
+
+
+
+
+
+
+
+
+
+.side-panel-items {
+  @apply flex justify-center items-center text-center pt-2 pb-2 border-b-2;
+}
+
+.image-show-card {
+  @apply  my-3 mx-2 flex flex-col justify-center items-center border-slate-300 border-2 rounded-xl p-5 text-base;
+}
+
+.side-panel {
+  @apply col-span-3  max-h-[90vh] overflow-y-scroll;
+  .inactive-card {
+    @apply bg-[#C2CCDF] h-16 flex flex-col justify-center items-center text-center mt-[2px];
+  }
+
+  .inactive-card:hover {
+    @apply bg-slate-300;
+  }
+
+  .active-card {
+    @apply bg-orange-400 text-white h-20 flex flex-col justify-center items-center text-center;
+    .icon {
+      @apply text-2xl rotate-180;
+    }
+  }
+}
